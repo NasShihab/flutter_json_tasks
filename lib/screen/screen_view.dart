@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../json_data.dart';
 import '../json_model.dart';
 import '../json_parser.dart';
 import '../main.dart';
@@ -7,8 +6,9 @@ import '../main.dart';
 
 class ScreenView extends StatelessWidget {
   final List<AndroidVerison> myDataList;
+  final String data;
 
-  ScreenView({super.key}) : myDataList = parseJsonData(input_1);
+  ScreenView({super.key, required this.data}) : myDataList = parseJsonData(data);
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_json_tasks/json_data.dart';
 import 'package:flutter_json_tasks/screen/screen_view.dart';
-import 'package:flutter_json_tasks/screen/second_screen_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +37,7 @@ Widget myButton(BuildContext context) => Row(
         ElevatedButton(
             onPressed: () {
               Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (context) => ScreenView()),
+                MaterialPageRoute(builder: (context) => ScreenView(data: input_1,)),
               );
             },
             child: const Text('Button 1')),
@@ -45,7 +45,7 @@ Widget myButton(BuildContext context) => Row(
             onPressed: () {
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => SecondScreenView()),
+                MaterialPageRoute(builder: (context) => ScreenView(data: input_2,)),
               );
             },
             child: const Text('Button2')),
