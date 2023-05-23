@@ -36,8 +36,8 @@ Widget myButton(BuildContext context) => Row(
       children: [
         ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.red, // Set the background color to red
-              foregroundColor: Colors.white, // Set the text color to white
+              backgroundColor: Colors.red,
+              foregroundColor: Colors.white,
             ),
             onPressed: () {
               Navigator.of(context).pushReplacement(
@@ -49,8 +49,8 @@ Widget myButton(BuildContext context) => Row(
         ElevatedButton(
             style: ElevatedButton.styleFrom(
               backgroundColor:
-                  Colors.green[700], // Set the background color to red
-              foregroundColor: Colors.white, // Set the text color to white
+                  Colors.green[700],
+              foregroundColor: Colors.white,
             ),
             onPressed: () {
               Navigator.pushReplacement(
