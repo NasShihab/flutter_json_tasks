@@ -42,7 +42,7 @@ Widget myButton(BuildContext context) => Row(
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
                     builder: (context) => ScreenView(
-                        myJsonData: input_1, appBarTitle: 'Input 1 ')),
+                        myJsonData: input_1, appBarTitle: 'Output 1 ')),
               );
             },
             child: const Text('Input 1')),
@@ -56,7 +56,7 @@ Widget myButton(BuildContext context) => Row(
                 context,
                 MaterialPageRoute(
                     builder: (context) => const ScreenView(
-                        myJsonData: input_2, appBarTitle: 'Input 2')),
+                        myJsonData: input_2, appBarTitle: 'Output 2')),
               );
             },
             child: const Text('Input 2')),
