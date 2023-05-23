@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'json_model.dart';
 
 List<AndroidVerison> parseJsonData(String jsonData) {
+
   List<dynamic> data = json.decode(jsonData);
 
   List<AndroidVerison> myDataList = [];
