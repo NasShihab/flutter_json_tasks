@@ -32,9 +32,13 @@ class HomePage extends StatelessWidget {
 }
 
 Widget myButton(BuildContext context) => Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.red, // Set the background color to red
+              foregroundColor: Colors.white, // Set the text color to white
+            ),
             onPressed: () {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
@@ -43,6 +47,11 @@ Widget myButton(BuildContext context) => Row(
             },
             child: const Text('Button 1')),
         ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor:
+                  Colors.green[700], // Set the background color to red
+              foregroundColor: Colors.white, // Set the text color to white
+            ),
             onPressed: () {
               Navigator.pushReplacement(
                 context,
