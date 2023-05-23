@@ -27,9 +27,11 @@ class ScreenView extends StatelessWidget {
           itemCount: myDataList.length,
           itemBuilder: (context, index) {
             return Center(
-              child: Text(
-                myDataList[index].title.toString(),
-                style: const TextStyle(fontSize: 18),
+              child: FittedBox(
+                child: Text(
+                  myDataList[index].title.toString(),
+                  style: const TextStyle(fontSize: 18),
+                ),
               ),
             );
           },
