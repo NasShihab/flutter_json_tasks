@@ -37,7 +37,8 @@ Widget myButton(BuildContext context) => Row(
         ElevatedButton(
             onPressed: () {
               Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (context) => ScreenView(data: input_1,)),
+                MaterialPageRoute(
+                    builder: (context) => ScreenView(myJsonData: input_1)),
               );
             },
             child: const Text('Button 1')),
@@ -45,7 +46,8 @@ Widget myButton(BuildContext context) => Row(
             onPressed: () {
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => ScreenView(data: input_2,)),
+                MaterialPageRoute(
+                    builder: (context) => ScreenView(myJsonData: input_2)),
               );
             },
             child: const Text('Button2')),

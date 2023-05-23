@@ -6,9 +6,9 @@ import '../main.dart';
 
 class ScreenView extends StatelessWidget {
   final List<AndroidVerison> myDataList;
-  final String data;
+  final String myJsonData;
 
-  ScreenView({super.key, required this.data}) : myDataList = parseJsonData(data);
+  ScreenView({super.key, required this.myJsonData}) : myDataList = parseJsonData(myJsonData);
 
   @override
   Widget build(BuildContext context) {
