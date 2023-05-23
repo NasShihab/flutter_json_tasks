@@ -40,11 +40,11 @@ this.title,
 Use this model class to make the list. Don’t modify this model class. 
 
 ## Here is my work
-Page 1
+Page_1
 <img src="https://www.dropbox.com/s/iesjkzmf9fy0mbb/page1.jpg?raw=1" width="200" height="450">
 
-Output 1
+Output_1
 <img src="https://www.dropbox.com/s/t3czednp59txkuc/myOutput01.jpg?raw=1" width="200" height="450">
 
-Output 2
+Output_2
 <img src="https://www.dropbox.com/s/aiw10nev3okjr95/myOutput02.jpg?raw=1" width="200" height="450">
