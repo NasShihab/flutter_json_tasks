@@ -45,7 +45,7 @@ Widget myButton(BuildContext context) => Row(
                         myJsonData: input_1, appBarTitle: 'Output 1 ')),
               );
             },
-            child: const Text('Input 1')),
+            child: const Text('Output 1')),
         ElevatedButton(
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.green[700],
@@ -59,6 +59,6 @@ Widget myButton(BuildContext context) => Row(
                         myJsonData: input_2, appBarTitle: 'Output 2')),
               );
             },
-            child: const Text('Input 2')),
+            child: const Text('Output 2')),
       ],
     );
