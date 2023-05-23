@@ -4,17 +4,20 @@ import '../json_parser.dart';
 import '../main.dart';
 
 class ScreenView extends StatelessWidget {
-  final List<AndroidVerison> myDataList;
+  // final List<AndroidVerison> myDataList;
   final String myJsonData;
+  final String appBarTitle;
 
-  ScreenView({super.key, required this.myJsonData})
-      : myDataList = parseJsonData(myJsonData);
+  const ScreenView({super.key, required this.myJsonData, required this.appBarTitle});
+  // : myDataList = parseJsonData(myJsonData);
 
   @override
   Widget build(BuildContext context) {
+    final List<AndroidVerison> myDataList = parseJsonData(myJsonData);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Data'),
+        centerTitle: true,
+        title:  Text(appBarTitle),
       ),
       body: SafeArea(
         child: GridView.builder(

@@ -25,8 +25,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: myButton(context),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      body: Center(child: myButton(context)),
     );
   }
 }
@@ -42,23 +41,24 @@ Widget myButton(BuildContext context) => Row(
             onPressed: () {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
-                    builder: (context) => ScreenView(myJsonData: input_1)),
+                    builder: (context) => ScreenView(
+                        myJsonData: input_1, appBarTitle: 'Input 2')),
               );
             },
-            child: const Text('Button 1')),
+            child: const Text('Input 1')),
         ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor:
-                  Colors.green[700],
+              backgroundColor: Colors.green[700],
               foregroundColor: Colors.white,
             ),
             onPressed: () {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => ScreenView(myJsonData: input_2)),
+                    builder: (context) => const ScreenView(
+                        myJsonData: input_2, appBarTitle: 'Input 2')),
               );
             },
-            child: const Text('Button2')),
+            child: const Text('Input 2')),
       ],
     );
